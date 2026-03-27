@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +16,15 @@
       --border: #e2e8f0;
       --radius: 12px;
     }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
       background: var(--bg);
@@ -23,14 +32,25 @@
       line-height: 1.7;
       padding: 0;
     }
+
     .header {
       background: linear-gradient(135deg, var(--primary) 0%, #7c3aed 100%);
       color: #fff;
       text-align: center;
       padding: 48px 24px 36px;
     }
-    .header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 4px; }
-    .header p  { font-size: 0.95rem; opacity: 0.85; }
+
+    .header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .header p {
+      font-size: 0.95rem;
+      opacity: 0.85;
+    }
+
     .lang-bar {
       display: flex;
       justify-content: center;
@@ -38,6 +58,7 @@
       max-width: 800px;
       margin: 0 auto;
     }
+
     .lang-btn {
       padding: 8px 18px;
       border: 1.5px solid var(--border);
@@ -48,11 +69,13 @@
       cursor: default;
       font-weight: 500;
     }
+
     .container {
       max-width: 800px;
       margin: 24px auto 48px;
       padding: 0 20px;
     }
+
     .intro {
       background: var(--primary-light);
       border-left: 4px solid var(--primary);
@@ -62,24 +85,28 @@
       font-size: 1rem;
       color: var(--text);
     }
+
     .section-card {
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: var(--radius);
       padding: 24px 28px;
       margin-bottom: 16px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
     }
+
     .section-card h3 {
       font-size: 1.1rem;
       font-weight: 600;
       color: var(--primary);
       margin-bottom: 10px;
     }
+
     .section-card p {
       font-size: 0.95rem;
       color: var(--text-muted);
     }
+
     .footer {
       text-align: center;
       padding: 32px 24px;
@@ -89,21 +116,39 @@
       max-width: 800px;
       margin: 0 auto;
     }
-    .footer strong { color: var(--text); }
+
+    .footer strong {
+      color: var(--text);
+    }
+
     .effective-date {
       text-align: center;
       font-size: 0.85rem;
       color: var(--text-muted);
       margin-bottom: 24px;
     }
+
     @media (max-width: 600px) {
-      .header { padding: 36px 16px 28px; }
-      .header h1 { font-size: 1.5rem; }
-      .section-card { padding: 18px 20px; }
-      .lang-btn { padding: 6px 14px; font-size: 0.82rem; }
+      .header {
+        padding: 36px 16px 28px;
+      }
+
+      .header h1 {
+        font-size: 1.5rem;
+      }
+
+      .section-card {
+        padding: 18px 20px;
+      }
+
+      .lang-btn {
+        padding: 6px 14px;
+        font-size: 0.82rem;
+      }
     }
   </style>
 </head>
+
 <body>
   <div class="header">
     <h1>MediSathi</h1>
@@ -112,49 +157,69 @@
 
   <div class="container">
     <div class="intro">
-      This Privacy Policy describes how MediSathi handles your data. By using the App, you consent to the practices described below.
+      This Privacy Policy describes how MediSathi handles your data. By using the App, you consent to the practices
+      described below.
     </div>
     <div class="section-card">
       <h3>App Purpose</h3>
-      <p>MediSathi is a personal medication reminder and organizer app. It helps users schedule medicine reminders, medication lists, and keep track of doses taken. The app does <strong>NOT</strong> diagnose, treat, cure, or prevent any disease or health condition. It is not a medical device, does not provide clinical decision support, and is not intended to replace professional medical advice. MediSathi is purely an organizational and productivity tool for everyday medication management.</p>
+      <p>MediSathi is a personal medication reminder and organizer app. It helps users schedule medicine reminders,
+        medication lists, and keep track of doses taken. The app does <strong>NOT</strong> diagnose, treat, cure, or
+        prevent any disease or health condition. It is not a medical device, does not provide clinical decision support,
+        and is not intended to replace professional medical advice. MediSathi is purely an organizational and
+        productivity tool for everyday medication management.</p>
     </div>
     <div class="section-card">
       <h3>Medical Disclaimer</h3>
-      <p>MediSathi is not a healthcare provider and does not offer medical advice. The app simply stores user-entered reminder data (medicine names, times, dosages) as a personal organizer. Users should always consult a qualified healthcare professional for medical decisions. The developer assumes no liability for health outcomes.</p>
+      <p>MediSathi is not a healthcare provider and does not offer medical advice. The app simply stores user-entered
+        reminder data (medicine names, times, dosages) as a personal organizer. Users should always consult a qualified
+        healthcare professional for medical decisions. The developer assumes no liability for health outcomes.</p>
     </div>
     <div class="section-card">
       <h3>Data We Collect</h3>
-      <p>MediSathi stores medicine reminders, family member relationships, and app preferences locally on your device. When sync is enabled, this data is backed up to your personal Google Drive account. We do NOT collect, transmit, or store your data on any external server.</p>
+      <p>MediSathi stores medicine reminders, family member relationships, and app preferences locally on your device.
+        When sync is enabled, this data is backed up to your personal Google Drive account. We do NOT collect, transmit,
+        or store your data on any external server.</p>
     </div>
     <div class="section-card">
       <h3>How Data Is Stored</h3>
-      <p>Data is encrypted on your device and encrypted in transit when syncing with Google Drive. The developer has no ability to access, read, or process your personal health data.</p>
+      <p>Data is encrypted on your device and encrypted in transit when syncing with Google Drive. The developer has no
+        ability to access, read, or process your personal health data.</p>
     </div>
     <div class="section-card">
       <h3>Third-Party Services</h3>
-      <p>The App uses Google Sign-In and Google Drive for authentication and sync. The App may use AI services for prescription scanning. These services are governed by their own privacy policies. The developer is not responsible for the privacy practices of third-party services.</p>
+      <p>The App uses Google Sign-In and Google Drive for authentication and sync. The App may use AI services for
+        prescription scanning. These services are governed by their own privacy policies. The developer is not
+        responsible for the privacy practices of third-party services.</p>
     </div>
     <div class="section-card">
       <h3>Your Rights</h3>
-      <p>You may clear local cache, export your data, or permanently delete your Google Drive backup at any time from within the App settings. Upon deletion, the developer retains no copy of your data.</p>
+      <p>You may clear local cache, export your data, or permanently delete your Google Drive backup at any time from
+        within the App settings. Upon deletion, the developer retains no copy of your data.</p>
     </div>
     <div class="section-card">
       <h3>No Health Data Processing</h3>
-      <p>The developer does NOT process, analyse, sell, or share your health information with any third party. All health-related data remains solely under your control in your device and your Google Account.</p>
+      <p>The developer does NOT process, analyse, sell, or share your health information with any third party. All
+        health-related data remains solely under your control in your device and your Google Account.</p>
     </div>
     <div class="section-card">
       <h3>Account & Data Deletion</h3>
       <p>Users can request deletion of their account and associated data at any time.<br>
-      <strong>To delete your data from the App:</strong><br>
-      1. Open the MediSathi app.<br>
-      2. Go to Settings.<br>
-      3. Tap “Delete Google Account Data”.<br>
-      4. Confirm deletion.<br><br>
-      Upon deletion:<br>
-      • All user-entered medication and reminder data stored locally will be permanently removed.<br>
-      • Google Drive backups (if enabled) will be deleted from your Google Account.<br>
-      • The developer does not retain any copy of your personal data.</p>
+        <strong>To delete your data from the App:</strong><br>
+        1. Open the MediSathi app.<br>
+        2. Go to Settings.<br>
+        3. Tap “Delete Google Account Data”.<br>
+        4. Confirm deletion.<br><br>
+        Upon deletion:<br>
+        • All user-entered medication and reminder data stored locally will be permanently removed.<br>
+        • Google Drive backups (if enabled) will be deleted from your Google Account.<br>
+        • The developer does not retain any copy of your personal data.
+      </p>
     </div>
+    <div class="section-card">
+      <h3>Contact Us</h3>
+      <p>If you have any questions, contact us at: <b>dhruvianlabs@gmail.com</b></p>
+    </div>
+
   </div>
 
   <div class="footer">
@@ -162,4 +227,5 @@
     &copy; 2026 MediSathi. All rights reserved.
   </div>
 </body>
+
 </html>
